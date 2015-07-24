@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<network>
+<elements>
+<activeElement cost="10.0" id="1" ip="191.168.0.10" timeDelay="0.45" type="pc"/>
+<activeElement cost="13.0" id="2" ip="191.168.0.11" timeDelay="0.42" type="pc"/>
+<activeElement cost="12.0" id="3" ip="191.168.0.12" timeDelay="0.33" type="pc"/>
+<activeElement cost="14.0" id="4" ip="191.168.0.13" timeDelay="0.52" type="pc"/>
+<activeElement cost="5.0" id="5" ip="191.168.0.14" timeDelay="0.1" type="switch"/>
+<passiveElement cost="3.0" id="6" timeDelay="0.2" type="cable"/>
+<passiveElement cost="3.0" id="7" timeDelay="0.2" type="cable"/>
+<passiveElement cost="3.0" id="8" timeDelay="0.2" type="cable"/>
+<passiveElement cost="3.0" id="9" timeDelay="0.2" type="cable"/>
+<passiveElement cost="3.0" id="10" timeDelay="0.2" type="cable"/>
+</elements>
+<connections>
+<connect firstID="1" secondID="6"/>
+<connect firstID="2" secondID="7"/>
+<connect firstID="3" secondID="8"/>
+<connect firstID="3" secondID="10"/>
+<connect firstID="4" secondID="9"/>
+<connect firstID="4" secondID="10"/>
+<connect firstID="5" secondID="6"/>
+<connect firstID="5" secondID="7"/>
+<connect firstID="5" secondID="8"/>
+<connect firstID="5" secondID="9"/>
+</connections>
+</network>

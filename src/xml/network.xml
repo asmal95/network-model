@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+    <elements>
+        <activeElement id="1" type="pc" timeDelay="0.45" cost="10" ip="191.168.0.10" />
+        <activeElement id="2" type="pc" timeDelay="0.42" cost="13" ip="191.168.0.11" />
+        <activeElement id="3" type="pc" timeDelay="0.33" cost="12" ip="191.168.0.12" />
+        <activeElement id="4" type="pc" timeDelay="0.52" cost="14" ip="191.168.0.13" />
+        <activeElement id="5" type="switch" timeDelay="0.1" cost="5" ip="191.168.0.14" />
+
+        <passiveElement id="6" type="cable" timeDelay="0.2" cost="3" />
+        <passiveElement id="7" type="cable" timeDelay="0.2" cost="3" />
+        <passiveElement id="8" type="cable" timeDelay="0.2" cost="3" />
+        <passiveElement id="9" type="cable" timeDelay="0.2" cost="3" />
+        <passiveElement id="10" type="cable" timeDelay="0.2" cost="3" />
+    </elements>
+    <connections>
+        <connect firstID="1" secondID="6" />	<!-- пк1 с проводом1 -->
+        <connect firstID="6" secondID="5" />	<!-- провод1 со свитчем -->
+        <connect firstID="2" secondID="7" />	<!-- пк2 с проводом 2  -->
+        <connect firstID="7" secondID="5" />	<!-- провод 2 со свитчем -->
+        <connect firstID="3" secondID="8" />	<!-- пк3 с проводом 3 -->
+        <connect firstID="8" secondID="5" />	<!-- провод 3 со свитчем -->
+        <connect firstID="4" secondID="9" />	<!-- пк4 с проводом 4 -->
+        <connect firstID="9" secondID="5" />	<!-- провод 4 со свитчем -->
+        <connect firstID="4" secondID="10" />	<!-- пк4 с проводом 5 -->
+        <connect firstID="10" secondID="3" />	<!-- провод 5 со пк3 -->
+    </connections>
+</network>
